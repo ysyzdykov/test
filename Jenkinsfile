@@ -5,7 +5,7 @@ node {
     stage ('SCM Checkout') {
 
         echo 'Pulling change from the branch ${params.branch}'
-        git url 'https://github.com/ysyzdykov/mp2019_codeRepo.git' branch '${params.branch}'
+        git url: 'https://github.com/ysyzdykov/mp2019_codeRepo.git', branch '${params.branch}'
 
     }
 
