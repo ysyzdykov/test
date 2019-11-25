@@ -1,4 +1,4 @@
-properties([parameters([choice(choices: ['master', 'hello-world-1', 'hello-world-2'], description: 'Select branch to build', name: 'branch')])])
+properties([parameters([choice(choices: 'master\nhello-world-1\nhello-world-2', description: 'Select branch to build', name: 'branch')])])
 
 node {
 
